@@ -1,0 +1,24 @@
+Variables
+
+Binary
+    race_white
+    gender_male
+    ethnicity
+Ordinal
+    income
+    subjective_class
+    income_enough
+    leftright
+    degree
+Continuous
+    COVIDthreat
+    prevent_behav
+    VHscale
+    trust-science
+    MFQ_HARM_AVGscale
+    MFQ_FAIRNESS_AVGscale
+    MFQ_INGROUP_AVGscale 
+    MFQ_AUTHORITY_AVGscale
+    MFQ_PURITY_AVGscale
+    MFQ_PROGRESSIVISMscale
+    age

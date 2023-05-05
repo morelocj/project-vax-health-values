@@ -20,6 +20,15 @@ It is interesting to consider income in reference to subjective class identifica
 
 But that is not what this project is about. Anyway, here as in elsewhere, the data from REDCap came out with text as the values for variables. In order to prep the data for easy analysis, I needed to recode everything I wanted to use into integer variables as opposed to string/object variables. This applied to almost every variable in the dataset that I wanted to use. Of particualr importance, scales that combined multiple survey items could not be calculated until each off the applicable survey items was converted into numerical data. 
 
+Once everything was converted to numerical values, I used the Sklearn module to do a Nearest Neighbors imputation to take care of missing values (MAR). Some of the variables I used for this were ordinal, and with these, the imputation results something came back with numbers that included fractions/decimals. In these cases, I rounded the imputed values toward their nearest whole number. 
 
+I ran a table of correlations on the continuous variables, and have put some of them in scatterplots, like the following examples:
 
+![image](https://user-images.githubusercontent.com/8931602/236530708-998df5e5-09be-4850-9642-a78e8f40b312.png)
 
+![image](https://user-images.githubusercontent.com/8931602/236531056-3fcb6bb4-750a-4026-aba5-899a4cab034f.png)
+
+![image](https://user-images.githubusercontent.com/8931602/236531450-e1056a8b-64ef-4e57-82d0-efc6aed420ac.png)
+
+This last of the 3 charts is especially interesting to me because of the way the spread varies.
+Without getting too into analyzing the meaning of these, for now I will just note that there is a lot that can be done with this data, via exploration, and I will continue to play around with it. 

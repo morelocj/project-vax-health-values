@@ -5,11 +5,21 @@ I also decided to reclean and reanalyze the data using Python/Pandas/Matplotlib 
 The following is a brief description of my process using Python, and my code is contained in the various pages of this repo. 
 
 Returning to the raw, deidentified data downloaded from REDCap, I revisited my demographic control variables, testing them for normality, kurtosis, and so on, when continuous. Here are a few charts from this exploration:
+
 ![image](https://user-images.githubusercontent.com/8931602/236516822-b8c262c3-815b-4244-b910-297158887ce7.png)
+
 The age variable is bimodal. This variable has more missing values than any other demographic variable.
+
 ![image](https://user-images.githubusercontent.com/8931602/236517050-568d8fdf-3bbf-49f6-adbd-2702ab4bb1aa.png)
+
 The income variable (household monthly income) is certainly not even across categories - the middle economic categories have the greatest frequency.
+
 ![image](https://user-images.githubusercontent.com/8931602/236517670-b4301192-df40-4e1a-b3c0-4cf5ae3992d3.png)
+
 It is interesting to consider income in reference to subjective class identification.
+
+But that is not what this project is about. Anyway, here as in elsewhere, the data from REDCap came out with text as the values for variables. In order to prep the data for easy analysis, I needed to recode everything I wanted to use into integer variables as opposed to string/object variables. This applied to almost every variable in the dataset that I wanted to use. Of particualr importance, scales that combined multiple survey items could not be calculated until each off the applicable survey items was converted into numerical data. 
+
+
 
 
